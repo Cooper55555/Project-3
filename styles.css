@@ -1,0 +1,353 @@
+:root {
+    --black: #0b0c10;
+    --lightgrijs: #cacaca;
+    --pink: #FFD1DC;
+    --darkpink: #dd9cab;
+    --white: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+header{
+    background: linear-gradient(180deg, #dd9cab, #dd9cab, #FFD1DC, #FFD1DC, #ffffff);
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+nav {
+    padding: 20px 60px;
+    display: flex;
+    font-size: 32px;
+    justify-content: center;
+}
+
+nav a {
+    padding: 0 30px;
+}
+
+.First-Nav-Section {
+    justify-content: left;
+}
+
+.Second-Nav-Section {
+    justify-content: right;
+}
+
+.Nav-Section {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 28px;
+}
+
+.Card-Img {
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+    border-radius: 28px;
+}
+
+.Cards-Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 50px;
+    flex-wrap: wrap;
+}
+
+.Big-Card {
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 28px;
+    box-shadow: 0 0 50px var(--lightgrijs);
+    width: 40%;
+    transition: 0.3s;
+}
+
+
+.Big-Card:hover {
+    transform: scale(1.02);
+}
+
+.Small-Card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.Margin-Left-P {
+    margin-left: 20px;
+}
+
+.Img-Section {
+    overflow: auto;
+}
+
+.Info-Section {
+    padding: 20px;
+}
+
+.Info-Section h2 {
+    margin-bottom: 8px;
+    font-size: 50px;
+}
+
+.Info-Section p {
+    font-size: 25px;
+}
+
+.Bio-Part {
+    text-align: center;
+    margin: 20px auto;
+    width: 1000px;
+}
+
+.Bio-Text-Section h1 {
+    margin: 10px 0 20px 0;
+    font-size: 50px;
+}
+
+.Bio-Text-Section {
+    background-color: var(--white);
+    border-radius: 28px;
+    padding: 20px;
+}
+
+.PFP {
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+    border: 5px solid var(--white);
+}
+
+.White-BG {
+    background-color: var(--white);
+    height: 60px;
+    width: 150px;
+    margin: auto;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.Profile-Section {
+    margin-bottom: -70px;
+}
+
+.Gallery-Title {
+    text-align: center;
+    font-size: 100px;
+    margin: 100px 0;
+}
+
+.Socials {
+    margin-top: 100px;
+}
+
+.Card-Socials {
+    background-color: var(--white);
+    border-radius: 28px;
+    box-shadow: 0 0 50px var(--lightgrijs);
+    width: 20%;
+    padding: 20px;
+    margin: 0 20px;
+}
+
+.Card-Socials i {
+    font-size: 70px;
+    margin: 30px 10px;
+}
+
+.Card-Socials a {
+    color: var(--black);
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+a:hover {
+    color: var(--darkpink);
+}
+
+.Card-Socials hr {
+    height: 10px;
+    background-color: var(--black);
+    border: none;
+    margin-bottom: 20px;
+}
+
+.Card-Socials h2 {
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+.Card-Socials p {
+    font-size: 25px;
+}
+
+.Social-Cards {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+    margin-top: 150px;
+    background: linear-gradient(360deg, #dd9cab, #FFD1DC);
+    padding: 20px;
+    flex-direction: column;
+    height: 100%;
+}
+
+footer h3 {
+    font-size: 40px;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+footer hr {
+    border: none;
+    background-color: var(--black);
+    height: 5px;
+    margin-top: 20px;
+}
+
+.Footer-Part,
+.Bottom-Footer-Part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    width: 1000px;
+    margin: auto;
+    padding: 10px;
+}
+
+.Links {
+    text-align: center;
+}
+
+.Bottom-Footer-Part {
+    width: 1000px;
+    justify-content: center;
+}
+
+footer a {
+    display: block;
+    font-size: 20px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: 0.4s;
+    width: 0%;
+}
+
+footer a:hover {
+    color: var(--black);
+    border-bottom: 2px solid var(--black);
+    width: 100%;
+}
+
+.Footer-Section {
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+.Bottom-Footer-Section {
+    padding: 20px 30px;
+}
+
+@media screen and (max-width: 1150px) {
+    .Social-Cards {
+        flex-direction: column;
+    }
+
+    .Card-Socials {
+        width: 70%;
+        margin: 10px auto;
+    }
+
+    .Nav-Section {
+        height: 250px;
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 20px 30px;
+    }
+
+    .Second-Nav-Section {
+        text-align: center;
+    }
+
+    .Bio-Text-Section {
+        margin: auto;
+        padding: 20px;
+    }
+
+    .Profile-Section {
+        width: 300px;
+        margin-top: 20px;
+    }
+
+    .White-BG {
+        width: 150px;
+        margin: auto;
+    }
+
+    .Bio-Part {
+        width: 300px;
+        margin: auto;
+    }
+
+    .Cards-Section {
+        margin: 0;
+    }
+
+    .Big-Card {
+        width: 300px;
+    }
+
+    main {
+        display: block;
+    }
+
+    .Footer-Part {
+        width: 300px;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .Footer-Section {
+        margin-top: 40px;
+    }
+
+    footer a{
+        width: 100%;
+    }
+
+    .Bottom-Footer-Part {
+        width: 300px;
+    }
+
+    footer {
+        height: 100%;
+    }
+}
